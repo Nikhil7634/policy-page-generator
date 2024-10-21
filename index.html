@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy Generator</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+
+
+    <style>
+      
+      html{
+        scroll-behavior: smooth;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 10px;
+       }
+
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      label {
+        display: block;
+        margin: 10px 0 5px;
+      }
+
+      select{
+         padding: 10px !important;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 50px !important;
+       }
+       select:focus{
+        border: none !important;
+        outline: none !important;
+       }
+
+      button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #218838;
+      }
+
+      #result {
+        margin-top: 20px;
+      }
+
+      .tabs {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+
+      .tab-button {
+        width: 48%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-align: center;
+      }
+
+      .tab-button:hover {
+        background-color: #0056b3;
+      }
+
+    
+
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    
+
+<nav class="bg-white border-gray-200  :bg-gray-900" style="position: sticky;top: 0;z-index: 1000;">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+
+      <span class="text-4xl text-indigo-600" style="font-weight: 1000;">VEx</span>
+          
+    </a>
+    <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200  :text-gray-400  :hover:bg-gray-700  :focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+      <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white  :bg-gray-800 md: :bg-gray-900  :border-gray-700">
+        <li>
+          <a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0  :text-white md: :text-blue-500" aria-current="page">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  :text-white md: :hover:text-blue-500  :hover:bg-gray-700  :hover:text-white md: :hover:bg-transparent">About</a>
+        </li>
+        <li>
+          <a href="#service" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  :text-white md: :hover:text-blue-500  :hover:bg-gray-700  :hover:text-white md: :hover:bg-transparent">Services</a>
+        </li>
+        
+        <li>
+          <a href="#contact" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  :text-white md: :hover:text-blue-500  :hover:bg-gray-700  :hover:text-white md: :hover:bg-transparent">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+     
+  <section
+    class="pt-8 lg:pt-20 bg-[url('https://pagedone.io/asset/uploads/1691055810.png')] bg-center bg-cover"
+  >
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center">
+      <div
+        class="border border-indigo-600 p-1 w-60 mx-auto rounded-full flex items-center justify-between mb-4"
+      >
+        <span class="font-inter text-xs font-medium text-gray-900 ml-3"
+          >Explore how to use for brands.</span
+        >
+        <a
+          href="#service"
+          class="w-8 h-8 rounded-full flex justify-center items-center bg-indigo-600"
+        >
+          <svg
+            width="17"
+            height="16"
+            viewBox="0 0 17 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.83398 8.00019L12.9081 8.00019M9.75991 11.778L13.0925 8.44541C13.3023 8.23553 13.4073 8.13059 13.4073 8.00019C13.4073 7.86979 13.3023 7.76485 13.0925 7.55497L9.75991 4.22241"
+              stroke="white"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </a>
+      </div>
+      <h1
+        class="max-w-2xl mx-auto text-center font-manrope font-bold text-4xl text-gray-900 mb-5 md:text-5xl leading-[50px]"
+      >
+      Instant Privacy Policy Generator for 
+        <span class="text-indigo-600">Your Website</span>
+      </h1>
+      <p
+        class="max-w-sm mx-auto text-center text-base font-normal leading-7 text-gray-500 mb-9"
+      >
+      Easily create customized privacy policies for your website to ensure compliance and protect user data.
+
+
+
+
+
+
+
+      </p>
+      <a
+        href="#getn"
+        class="w-full md:w-auto mb-14 inline-flex items-center justify-center py-3 px-7 text-base font-semibold text-center text-white rounded-full bg-indigo-600 shadow-xs hover:bg-indigo-700 transition-all duration-500"
+      >
+        Get Started
+        <svg
+          class="ml-2"
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.5 15L11.0858 11.4142C11.7525 10.7475 12.0858 10.4142 12.0858 10C12.0858 9.58579 11.7525 9.25245 11.0858 8.58579L7.5 5"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+      <div class="flex justify-center ">
+        <img 
+          src="https://www.wpeka.com/rgh/wp-content/uploads/2024/04/FreePrivacyPolicy-Pricing.webp"
+          alt="Dashboard image" class="rounded-3xl h-auto object-cover mb-20"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="lg:pt-20 pt-0 h-full px-0 sm:px-5" id="about">
+    <div
+      class="rounded-2xl bg-indigo-50 py-10 overflow-hidden m-5 lg:m-0 2xl:py-16 xl:py-8  lg:rounded-tl-2xl lg:rounded-bl-2xl ">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-14 items-center lg:grid-cols-12 lg:gap32">
+          <div class="w-full xl:col-span-5 lg:col-span-6 2xl:-mx-5 xl:-mx-0">
+            <div class="flex items-center text-sm font-medium text-gray-500 justify-center lg:justify-start">
+              <span class="bg-indigo-600 py-1 px-3 rounded-2xl text-xs font-medium text-white mr-3 ">#1</span>
+              About Us
+            </div>
+            <h1 class="py-8 text-center text-gray-900 font-bold font-manrope text-2xl lg:text-5xl lg:text-left leading-[30px] lg:leading-[70px]">
+              Smart Privacy Policy Creator: <span class="text-indigo-600">Automate Your Compliance</span>
+            </h1>
+            <p class=" text-gray-500 text-lg text-center lg:text-left">
+              Our Privacy Policy Generator tool helps you quickly create a customized, legally compliant privacy policy to protect your website and users.
+            </p>
+            <div
+              class="relative w-40 p-1.5 my-10 mx-auto lg:ml-0  flex  items-center gap-y-4 h-auto md:h-16 flex-col md:flex-row justify-center rounded-full md:shadow-[0px 15px 30px -4px rgba(16, 24, 40, 0.03)] border border-transparent md:bg-white transition-all duration-500 hover:border-indigo-600 focus-within:border-indigo-600">
+               <a
+                class="bg-indigo-600 rounded-full py-3 px-7 text-base font-semibold text-white hover:bg-indigo-700 cursor-pointer transition-all duration-500 md:w-fit w-full">Contact Us
+                </a>
+            </div>
+             
+          </div>
+          <div class="w-full xl:col-span-7  lg:col-span-6 block">
+            <div class="w-full  sm:w-auto lg:w-[60.8125rem] xl:ml-16">
+              <img src="https://www.cookieyes.com/wp-content/themes/cookieyes-new/assets/images/ppg/hero-img.svg" alt="Dashboard image" class="rounded-l-3xl object-cover"
+                class="w-full  lg:h-auto ">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+
+                                          
+  <div class="w-full py-20  bg-[url('https://pagedone.io/asset/uploads/1691055810.png')] bg-center bg-cover" id="getn">
+    <div class="container mx-auto p-6 max-w-3xl">
+      <h1 class="text-3xl font-bold text-gray-800 mb-6 text-center">
+        Privacy Policy Generator
+      </h1>
+      
+      <form
+        class="bg-white p-6 rounded-lg shadow-md space-y-4"
+        id="policyForm"
+      >
+        <div class="relative mb-6">
+          <label
+            class="flex items-center mb-2 text-gray-600 text-sm font-medium"
+            >Company Name:
+            <svg
+              width="7"
+              height="7"
+              class="ml-1"
+              viewBox="0 0 7 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z"
+                fill="#EF4444"
+              />
+            </svg>
+          </label>
+          <div class="relative text-gray-500 focus-within:text-gray-900 mb-6">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#6b7280"
+              >
+                <path
+                  d="M160-720v-80h640v80H160Zm0 560v-240h-40v-80l40-200h640l40 200v80h-40v240h-80v-240H560v240H160Zm80-80h240v-160H240v160Zm-38-240h556-556Zm0 0h556l-24-120H226l-24 120Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="companyName"
+              class="block w-full h-11 pr-5 pl-12 py-2.5 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none"
+              placeholder="Enter Your Company Name"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="relative mb-6">
+          <label
+            class="flex items-center mb-2 text-gray-600 text-sm font-medium"
+            >Website Name
+            :
+            <svg
+              width="7"
+              height="7"
+              class="ml-1"
+              viewBox="0 0 7 7" 
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z"
+                fill="#EF4444"
+              />
+            </svg>
+          </label>
+          <div class="relative text-gray-500 focus-within:text-gray-900 mb-6">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#6b7280"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q20 0 40 2.5t40 4.5v82q-20-2-40-4.5t-40-2.5q-26 36-45 75.5T404-640h116v80H386q-3 20-4.5 40t-1.5 40q0 20 1.5 40t4.5 40h188q3-20 4.5-40t1.5-40q0-20-1.5-40t-4.5-40h80q3 20 4.5 40t1.5 40q0 20-1.5 40t-4.5 40h136q5-20 7.5-40t2.5-40q0-20-2.5-40t-7.5-40h82q4 20 6 40t2 40q0 83-31.5 156T763-197q-54 54-127 85.5T480-80ZM170-400h136q-3-20-4.5-40t-1.5-40q0-20 1.5-40t4.5-40H170q-5 20-7.5 40t-2.5 40q0 20 2.5 40t7.5 40Zm206 222q-18-34-31.5-69.5T322-320H204q29 51 73 87.5t99 54.5ZM204-640h118q9-37 22.5-72.5T376-782q-55 18-99 54.5T204-640Zm276 478q26-36 45-75.5t31-82.5H404q12 43 31 82.5t45 75.5Zm104-16q55-18 99-54.5t73-87.5H638q-9 37-22.5 72.5T584-178Zm56-462v-240h240v240H640Zm120-120h80v-80h-80v80Z"/></svg>
+            </div>
+            <input
+              type="text"
+              id="websiteName"
+              class="block w-full h-11 pr-5 pl-12 py-2.5 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none"
+              placeholder="Enter Your Website Name "
+              required
+            />
+          </div>
+        </div>
+
+        <div class="relative mb-6">
+          <label
+            class="flex items-center mb-2 text-gray-600 text-sm font-medium"
+            >Website URL :
+            <svg
+              width="7"
+              height="7"
+              class="ml-1"
+              viewBox="0 0 7 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z"
+                fill="#EF4444"
+              />
+            </svg>
+          </label>
+          <div class="relative text-gray-500 focus-within:text-gray-900 mb-6">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#6b7280"
+              >
+                <path
+                  d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="websiteURL"
+              class="block w-full h-11 pr-5 pl-12 py-2.5 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none"
+              placeholder="Enter your website URL"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="relative mb-6">
+          <label
+            class="flex items-center mb-2 text-gray-600 text-sm font-medium"
+            >Contact Email :
+            <svg
+              width="7"
+              height="7"
+              class="ml-1"
+              viewBox="0 0 7 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z"
+                fill="#EF4444"
+              />
+            </svg>
+          </label>
+          <div class="relative text-gray-500 focus-within:text-gray-900 mb-6">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+              <svg
+                class="stroke-current ml-1"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.54887 6.73325L7.76737 9.36216C9.82591 10.645 10.8552 11.2864 11.9999 11.2863C13.1446 11.2861 14.1737 10.6443 16.2318 9.36081L20.4611 6.72333M11 20H13C16.7712 20 18.6569 20 19.8284 18.8284C21 17.6569 21 15.7712 21 12C21 8.22876 21 6.34315 19.8284 5.17157C18.6569 4 16.7712 4 13 4H11C7.22876 4 5.34315 4 4.17157 5.17157C3 6.34315 3 8.22876 3 12C3 15.7712 3 17.6569 4.17157 18.8284C5.34315 20 7.22876 20 11 20Z"
+                  stroke=""
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="email"
+              class="block w-full h-11 pr-5 pl-12 py-2.5 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none"
+              placeholder="Enter Email"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="relative mb-6">
+          <label
+            class="flex items-center mb-2 text-gray-600 text-sm font-medium"
+            >Country
+            <svg
+              width="7"
+              height="7"
+              class="ml-1"
+              viewBox="0 0 7 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z"
+                fill="#EF4444"
+              />
+            </svg>
+          </label>
+          <div class="relative text-gray-500 focus-within:text-gray-900 mb-6">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="ml-1"
+                fill="none"
+                height="1em"
+                viewBox="0 0 448 512"
+              >
+                <path
+                  d="M48 24C48 10.7 37.3 0 24 0S0 10.7 0 24V64 350.5 400v88c0 13.3 10.7 24 24 24s24-10.7 24-24V388l80.3-20.1c41.1-10.3 84.6-5.5 122.5 13.4c44.2 22.1 95.5 24.8 141.7 7.4l34.7-13c12.5-4.7 20.8-16.6 20.8-30V66.1c0-23-24.2-38-44.8-27.7l-9.6 4.8c-46.3 23.2-100.8 23.2-147.1 0c-35.1-17.6-75.4-22-113.5-12.5L48 52V24zm0 77.5l96.6-24.2c27-6.7 55.5-3.6 80.4 8.8c54.9 27.4 118.7 29.7 175 6.8V334.7l-24.4 9.1c-33.7 12.6-71.2 10.7-103.4-5.4c-48.2-24.1-103.3-30.1-155.6-17.1L48 338.5v-237z"
+                  fill="currentColor"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="country"
+              class="block w-full h-11 pr-5 pl-12 py-2.5 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none"
+              placeholder="Enter Country"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="relative mb-6">
+          <label
+            class="flex items-center mb-2 text-gray-600 text-sm font-medium"
+            >State
+            <svg
+              width="7"
+              height="7"
+              class="ml-1"
+              viewBox="0 0 7 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z"
+                fill="#EF4444"
+              />
+            </svg>
+          </label>
+          <div class="relative text-gray-500 focus-within:text-gray-900 mb-6">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="24px"
+                viewBox="0 -960 960 960"
+                width="24px"
+                fill="#6b7280"
+              >
+                <path
+                  d="M80-120v-80h160v-160h-80v-80h84q12-75 66.5-129.5T440-636v-204h280v160H520v44q75 12 129.5 66.5T716-440h84v80h-80v160h160v80H80Zm240-80h120v-160H320v160Zm200 0h120v-160H520v160ZM326-440h308q-14-53-57-86.5T480-560q-54 0-97 33.5T326-440Zm154 0Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="state"
+              class="block w-full h-11 pr-5 pl-12 py-2.5 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none"
+              placeholder="Enter State"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="relative mb-6">
+          <label
+            class="flex items-center mb-2 text-gray-600 text-sm font-medium"
+            >Personal Information Collected:
+
+            <svg
+              width="7"
+              height="7"
+              class="ml-1"
+              viewBox="0 0 7 7"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z"
+                fill="#EF4444"
+              />
+            </svg>
+          </label>
+          <div class="flex">
+            <div class="relative w-full">
+              <textarea id="personalInfo" class="block w-full h-40 px-4 py-2.5 text-base leading-7 font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-2xl placeholder-gray-400 focus:outline-none resize-none" placeholder="What kind of personal information do you collect from users?" required></textarea>
+            </div>
+           </div>
+          
+        </div>
+        <div>
+          <label for="entityType" class="flex items-center mb-2 text-gray-600 text-sm font-medium"
+            >Entity Type: <svg
+            width="7"
+            height="7"
+            class="ml-1"
+            viewBox="0 0 7 7"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M3.11222 6.04545L3.20668 3.94744L1.43679 5.08594L0.894886 4.14134L2.77415 3.18182L0.894886 2.2223L1.43679 1.2777L3.20668 2.41619L3.11222 0.318182H4.19105L4.09659 2.41619L5.86648 1.2777L6.40838 2.2223L4.52912 3.18182L6.40838 4.14134L5.86648 5.08594L4.09659 3.94744L4.19105 6.04545H3.11222Z"
+              fill="#EF4444"
+            />
+          </svg></label
+          > 
+        
+          <select
+            id="entityType"
+            required
+            class="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-gray-300"
+            
+          >
+            <option value="" disabled selected>Select entity type</option>
+            <option value="Individual">Individual</option>
+            <option value="Company">Company</option>
+            <option value="Non-Profit">Non-Profit</option>
+          </select>
+        </div>
+
+        <div class="flex items-center justify-center">
+          <button type="submit"
+            class="w-52 h-12 shadow-sm rounded-full bg-indigo-600 hover:bg-indigo-800 transition-all duration-700 text-white text-base font-semibold leading-7"
+          >
+            Generate
+          </button>
+        </div>
+      </form>
+
+      <div id="result" class="hidden mt-6">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-4 text-center">
+          Copy the Privacy Policy
+        </h2>
+        <div class="tabs mb-4 text-center">
+          <button
+            class="tab-button bg-indigo-600 px-4 py-2 rounded-full focus:outline-none"
+            data-tab="html"
+          >
+            HTML Format
+          </button>
+          <button
+            class="tab-button bg-indigo-600 px-4 py-2 rounded-full focus:outline-none"
+            data-tab="text"
+          >
+            Text Format
+          </button>
+        </div>
+        <textarea
+          id="output"
+          rows="20"
+          readonly
+          class="w-full border border-gray-300 rounded-md p-2 resize-none"
+        ></textarea>
+        <button
+          id="copyButton"
+          class="w-52 h-12 mx-auto shadow-sm rounded-full bg-indigo-600 hover:bg-indigo-800 transition-all duration-700 text-white text-base font-semibold leading-7"
+        >
+          Copy to Clipboard
+        </button>
+      </div>
+    </div>
+  </div>
+
+     <div class="bg-gray-50 text-gray-800 py-10" id="service">
+      <div class="w-[95%] sm:w-[70%] rounded-xl  mx-auto py-8 px-5 lg:px-20" style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;">
+        <h1 class="sm:text-3xl w-full text-2xl font-bold text-center sm:text-left mb-8 text-black p">Privacy Policy Generator Tool: <span class="text-indigo-600">Simplifying Compliance and User Trust.</span> </h1>
+    
+        <p class="text-lg leading-relaxed mb-6">
+          In today’s digital landscape, where data privacy is of utmost importance, a well-crafted privacy policy is essential for any website or online service. It not only ensures compliance with various data protection laws but also fosters trust between businesses and their users. However, drafting a comprehensive privacy policy can be a daunting task, especially for small businesses and startups. This is where a Privacy Policy Generator tool comes into play, providing an efficient solution for creating personalized privacy policies tailored to your specific needs.
+        </p>
+    
+        <h2 class="text-2xl font-semibold mt-8 mb-4 text-indigo-500">Understanding the Importance of a Privacy Policy</h2>
+        <p class="text-lg leading-relaxed mb-6">
+          A privacy policy is a legal document that outlines how a business collects, uses, stores, and protects user data. It serves several critical purposes:
+        </p>
+    
+        <ul class="list-disc ml-8 text-lg mb-6">
+          <li class="mb-2"><strong>Legal Compliance:</strong> Many jurisdictions require businesses to have a privacy policy, especially if they collect personal information from users.</li>
+          <li class="mb-2"><strong>Building Trust:</strong> A transparent privacy policy helps build trust with your users.</li>
+          <li class="mb-2"><strong>Reducing Liability:</strong> A well-defined privacy policy can protect your business from legal disputes.</li>
+        </ul>
+    
+        <h2 class="text-2xl font-semibold mt-8 mb-4 text-indigo-500">How a Privacy Policy Generator Works</h2>
+        <p class="text-lg leading-relaxed mb-6">
+          A Privacy Policy Generator tool simplifies the process of creating a privacy policy by guiding users through a series of questions about their data collection and processing practices. Here’s how it typically works:
+        </p>
+    
+        <ul class="list-disc ml-8 text-lg mb-6">
+          <li class="mb-2"><strong>User Input:</strong> Users start by entering basic information about their business.</li>
+          <li class="mb-2"><strong>Data Collection Practices:</strong> The generator prompts users to provide details about the types of data they collect.</li>
+          <li class="mb-2"><strong>Compliance Needs:</strong> Users can specify any applicable laws they need to comply with.</li>
+          <li class="mb-2"><strong>Customization Options:</strong> Many generators offer customization options, allowing users to tailor the language of the privacy policy.</li>
+          <li class="mb-2"><strong>Downloadable Document:</strong> The generator compiles the information into a formatted document that can be easily downloaded.</li>
+        </ul>
+    
+        <h2 class="text-2xl font-semibold mt-8 mb-4 text-indigo-500">Benefits of Using a Privacy Policy Generator Tool</h2>
+        <ul class="list-disc ml-8 text-lg mb-6">
+          <li class="mb-2"><strong>Time-Saving:</strong> A generator streamlines the process, allowing you to create a compliant policy quickly.</li>
+          <li class="mb-2"><strong>Cost-Effective:</strong> Hiring legal experts can be expensive. A generator offers a more affordable solution.</li>
+          <li class="mb-2"><strong>User-Friendly:</strong> Most generators guide you through the process with clear instructions.</li>
+          <li class="mb-2"><strong>Regular Updates:</strong> Many generators keep your policy updated with the latest legal requirements.</li>
+          <li class="mb-2"><strong>Customization:</strong> A generator allows you to tailor the document to your specific practices.</li>
+        </ul>
+    
+        <h2 class="text-2xl font-semibold mt-8 mb-4 text-indigo-500">Choosing the Right Privacy Policy Generator</h2>
+        <ul class="list-disc ml-8 text-lg mb-6">
+          <li class="mb-2"><strong>Reputation:</strong> Look for a tool with positive reviews and a track record of reliability.</li>
+          <li class="mb-2"><strong>Features:</strong> Ensure the generator offers customization options and covers relevant laws.</li>
+          <li class="mb-2"><strong>User Experience:</strong> Choose a generator that is intuitive and easy to navigate.</li>
+          <li class="mb-2"><strong>Cost:</strong> Compare pricing models for free and paid options.</li>
+          <li class="mb-2"><strong>Customer Support:</strong> Check if the generator provides support resources or customer service.</li>
+        </ul>
+    
+        <h2 class="text-2xl font-semibold mt-8 mb-4 text-indigo-500">Conclusion</h2>
+        <p class="text-lg leading-relaxed mb-6">
+          A Privacy Policy Generator tool is an invaluable resource for businesses navigating data protection laws. By simplifying the process of creating a personalized privacy policy, these tools ensure compliance, build user trust, and protect businesses from potential liabilities. Whether you’re a small startup or an established organization, investing in a privacy policy generator is a step towards responsible data handling and transparency with your users.
+        </p>
+      </div>
+     </div>
+
+    <div class="bg-[url('https://pagedone.io/asset/uploads/1691055810.png')] bg-center bg-cover"">
+      <section class="bg-[transparent]" id="contact">
+        <div class="container px-6 py-12 mx-auto">
+            <div class="text-center">
+                <p class="font-medium text-blue-500  :text-blue-400">Contact us</p>
+    
+                <h1 class="mt-2 text-2xl font-semibold text-gray-800 md:text-3xl  :text-white">Get in touch</h1>
+    
+                <p class="mt-3 text-gray-500  :text-gray-400">Our friendly team is always here to chat.</p>
+            </div>
+    
+            <div class="grid grid-cols-1 gap-12 mt-10 md:grid-cols-2 lg:grid-cols-3">
+                <div class="flex flex-col items-center justify-center text-center">
+                    <span class="p-3 text-blue-500 rounded-full bg-blue-100/80  :bg-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                        </svg>
+                    </span>
+    
+                    <h2 class="mt-4 text-lg font-medium text-gray-800  :text-white">Email</h2>
+                    <p class="mt-2 text-gray-500  :text-gray-400">Our friendly team is here to help.</p>
+                    <p class="mt-2 text-blue-500  :text-blue-400">paln8n7634@gmail.com</p>
+                </div>
+    
+                <div class="flex flex-col items-center justify-center text-center">
+                    <span class="p-3 text-blue-500 rounded-full bg-blue-100/80  :bg-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                        </svg>
+                    </span>
+                    
+                    <h2 class="mt-4 text-lg font-medium text-gray-800  :text-white">Office</h2>
+                    <p class="mt-2 text-gray-500  :text-gray-400">Come say hello at our office HQ.</p>
+                    <p class="mt-2 text-blue-500  :text-blue-400">Yash Padma office no: 104</p>
+                </div>
+    
+                <div class="flex flex-col items-center justify-center text-center">
+                    <span class="p-3 text-blue-500 rounded-full bg-blue-100/80  :bg-gray-800">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                        </svg>
+                    </span>
+                    
+                    <h2 class="mt-4 text-lg font-medium text-gray-800  :text-white">Phone</h2>
+                    <p class="mt-2 text-gray-500  :text-gray-400">Mon-Fri from 8am to 5pm.</p>
+                    <p class="mt-2 text-blue-500  :text-blue-400">+91 9322889200</p>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+  
+  
+       <footer class="w-full py-5">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl mx-auto">
+        <a href="#" class="flex justify-center ">
+           <span class="text-4xl text-indigo-600" style="font-weight: 1000;"> VEx</span>
+        </a>
+        <ul class="text-lg flex items-center justify-center flex-col gap-7 md:flex-row md:gap-12 transition-all duration-500 py-10 mb-10 border-b border-gray-200">
+          <li>
+            <a href="#" class="text-gray-800 hover:text-gray-900">Home</a>
+          </li>
+          <li>
+            <a href="#about" class=" text-gray-800 hover:text-gray-900">About</a>
+          </li>
+          
+          <li>
+            <a href="#service" class=" text-gray-800 hover:text-gray-900">Services</a>
+          </li>
+          <li>
+            <a href="#contact" class=" text-gray-800 hover:text-gray-900">Contact</a>
+          </li>
+        </ul>
+        <div class="flex space-x-10 justify-center items-center mb-10">
+          <a href="javascript:;" class="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 ">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path id="Vector" d="M17.5667 14.7386L24.072 7.33936H22.5305L16.8819 13.764L12.3704 7.33936H7.16699L13.9892 17.0546L7.16699 24.8139H8.70862L14.6736 18.0292L19.4381 24.8139H24.6415L17.5663 14.7386H17.5667ZM15.4552 17.1402L14.764 16.1728L9.2641 8.47491H11.632L16.0704 14.6873L16.7617 15.6548L22.5312 23.73H20.1633L15.4552 17.1406V17.1402Z" fill="currentColor" />
+            </svg>
+          </a>
+          <a href="javascript:;" class="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 ">
+            <svg class="w-[1.688rem] h-[1.688rem] " viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.76556 14.8811C9.76556 12.3243 11.8389 10.2511 14.3972 10.2511C16.9555 10.2511 19.03 12.3243 19.03 14.8811C19.03 17.4379 16.9555 19.5111 14.3972 19.5111C11.8389 19.5111 9.76556 17.4379 9.76556 14.8811ZM7.26117 14.8811C7.26117 18.82 10.456 22.0129 14.3972 22.0129C18.3385 22.0129 21.5333 18.82 21.5333 14.8811C21.5333 10.9422 18.3385 7.7493 14.3972 7.7493C10.456 7.7493 7.26117 10.9422 7.26117 14.8811ZM20.1481 7.46652C20.148 7.79616 20.2457 8.11843 20.4288 8.39258C20.6119 8.66674 20.8723 8.88046 21.177 9.00673C21.4817 9.133 21.8169 9.16614 22.1405 9.10196C22.464 9.03778 22.7612 8.87916 22.9945 8.64617C23.2278 8.41318 23.3868 8.11627 23.4513 7.79299C23.5157 7.46972 23.4829 7.13459 23.3568 6.83C23.2307 6.5254 23.017 6.26502 22.7428 6.08178C22.4687 5.89853 22.1463 5.80065 21.8164 5.80052H21.8158C21.3737 5.80073 20.9497 5.9763 20.637 6.28867C20.3243 6.60104 20.1485 7.02467 20.1481 7.46652ZM8.78274 26.1863C7.42782 26.1246 6.69138 25.8991 6.20197 25.7085C5.55314 25.4561 5.0902 25.1554 4.60346 24.6696C4.11672 24.1839 3.81543 23.7216 3.56395 23.0732C3.37317 22.5843 3.14748 21.8481 3.08588 20.494C3.01851 19.03 3.00506 18.5902 3.00506 14.8812C3.00506 11.1722 3.01962 10.7336 3.08588 9.26841C3.14759 7.9143 3.37495 7.17952 3.56395 6.68919C3.81654 6.04074 4.11739 5.57808 4.60346 5.09163C5.08953 4.60519 5.55203 4.30408 6.20197 4.05274C6.69116 3.86208 7.42782 3.63652 8.78274 3.57497C10.2476 3.50763 10.6877 3.49419 14.3972 3.49419C18.1068 3.49419 18.5473 3.50874 20.0134 3.57497C21.3683 3.63663 22.1035 3.86385 22.5941 4.05274C23.243 4.30408 23.7059 4.60585 24.1926 5.09163C24.6794 5.57741 24.9796 6.04074 25.2322 6.68919C25.4229 7.17808 25.6486 7.9143 25.7102 9.26841C25.7776 10.7336 25.7911 11.1722 25.7911 14.8812C25.7911 18.5902 25.7776 19.0287 25.7102 20.494C25.6485 21.8481 25.4217 22.5841 25.2322 23.0732C24.9796 23.7216 24.6787 24.1843 24.1926 24.6696C23.7066 25.155 23.243 25.4561 22.5941 25.7085C22.105 25.8992 21.3683 26.1247 20.0134 26.1863C18.5485 26.2536 18.1084 26.2671 14.3972 26.2671C10.686 26.2671 10.2472 26.2536 8.78274 26.1863ZM8.66768 1.0763C7.18823 1.14363 6.17729 1.37808 5.29443 1.72141C4.3801 2.07597 3.60608 2.55163 2.83262 3.32341C2.05916 4.09519 1.58443 4.86997 1.22966 5.78374C0.88612 6.66663 0.651535 7.67641 0.584162 9.15497C0.515676 10.6359 0.5 11.1093 0.5 14.8811C0.5 18.6529 0.515676 19.1263 0.584162 20.6072C0.651535 22.0859 0.88612 23.0955 1.22966 23.9784C1.58443 24.8916 2.05927 25.6673 2.83262 26.4387C3.60597 27.2102 4.3801 27.6852 5.29443 28.0407C6.17896 28.3841 7.18823 28.6185 8.66768 28.6859C10.1502 28.7532 10.6232 28.77 14.3972 28.77C18.1713 28.77 18.645 28.7543 20.1268 28.6859C21.6063 28.6185 22.6166 28.3841 23.5 28.0407C24.4138 27.6852 25.1884 27.2105 25.9618 26.4387C26.7353 25.667 27.209 24.8916 27.5648 23.9784C27.9083 23.0955 28.144 22.0857 28.2103 20.6072C28.2777 19.1252 28.2933 18.6529 28.2933 14.8811C28.2933 11.1093 28.2777 10.6359 28.2103 9.15497C28.1429 7.6763 27.9083 6.66608 27.5648 5.78374C27.209 4.87052 26.7341 4.09641 25.9618 3.32341C25.1896 2.55041 24.4138 2.07597 23.5011 1.72141C22.6166 1.37808 21.6062 1.14252 20.1279 1.0763C18.6461 1.00897 18.1724 0.992188 14.3983 0.992188C10.6243 0.992188 10.1502 1.00785 8.66768 1.0763Z" fill="currentColor"></path>
+            </svg>
+          </a>
+          <a href="javascript:;" class="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 ">
+            <svg class="w-[0.938rem] h-[1.625rem]" viewBox="0 0 15 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.7926 14.4697L14.5174 9.86889H10.0528V6.87836C10.0528 5.62033 10.6761 4.39105 12.6692 4.39105H14.7275V0.473179C13.5289 0.282204 12.3177 0.178886 11.1037 0.164062C7.42917 0.164062 5.0302 2.37101 5.0302 6.36077V9.86889H0.957031V14.4697H5.0302V25.5979H10.0528V14.4697H13.7926Z" fill="currentColor"></path>
+            </svg>
+          </a>
+          <a href="javascript:;" class="block  text-gray-900 transition-all duration-500 hover:text-indigo-600 ">
+            <svg class="w-[1.875rem] h-[1.375rem]" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M26.3106 1.27838C27.5782 1.62071 28.5745 2.61957 28.9113 3.88573C29.524 6.18356 29.524 10.9809 29.524 10.9809C29.524 10.9809 29.524 15.7782 28.9113 18.076C28.5698 19.3469 27.5735 20.3457 26.3106 20.6834C24.0186 21.2977 14.8226 21.2977 14.8226 21.2977C14.8226 21.2977 5.63122 21.2977 3.33456 20.6834C2.06695 20.3411 1.07063 19.3422 0.73385 18.076C0.121094 15.7782 0.121094 10.9809 0.121094 10.9809C0.121094 10.9809 0.121094 6.18356 0.73385 3.88573C1.07531 2.61488 2.07162 1.61602 3.33456 1.27838C5.63122 0.664062 14.8226 0.664062 14.8226 0.664062C14.8226 0.664062 24.0186 0.664062 26.3106 1.27838ZM19.5234 10.9809L11.885 15.403V6.55872L19.5234 10.9809Z" fill="currentColor"></path>
+            </svg>
+          </a>
+        </div>
+        <span class="text-lg text-gray-500 text-center block"><a href="#">Valtara Explainer</a> 2024, All rights reserved.</span>
+        </div>
+        </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+      document
+        .getElementById("policyForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          // Get form data
+          const companyName = document.getElementById("companyName").value;
+          const websiteURL = document.getElementById("websiteURL").value;
+          const websiteName = document.getElementById("websiteName").value;
+          const entityType = document.getElementById("entityType").value;
+          const country = document.getElementById("country").value;
+          const state = document.getElementById("state").value;
+          const personalInfo = document.getElementById("personalInfo").value;
+          const email = document.getElementById("email").value;
+
+          // Template arrays for dynamic generation
+          const htmlTemplates = [
+            `
+      <h2>Privacy Policy for ${companyName}</h2>
+      <p>At ${websiteName} (${websiteURL}), we respect your privacy and are committed to safeguarding the personal information you provide. This Privacy Policy outlines our practices regarding the collection, use, and protection of your data. We encourage you to read this policy thoroughly to understand how we treat your personal information and the measures we take to protect it.</p>
+
+      <h3>Entity Information</h3>
+      <p>${companyName} operates as a ${entityType} entity and is headquartered in ${state}, ${country}. Our organization abides by all relevant data protection laws to ensure your privacy is respected and your information is kept secure. We are committed to transparency in our data processing activities and want you to feel confident when using our services.</p>
+
+      <h3>Types of Information We Collect</h3>
+      <p>We collect various types of information to better serve you. This includes personal data such as ${personalInfo}, which you provide voluntarily when interacting with our services. We may collect this information when you sign up for an account, make a purchase, subscribe to our newsletter, or engage with our customer support team.</p>
+      <p>Additionally, we collect non-personal data automatically through cookies, web beacons, and similar technologies when you visit our website. This may include your IP address, browser type, device information, and browsing behavior. Such data helps us analyze trends, manage our website, and improve the user experience.</p>
+
+      <h3>How We Use Your Information</h3>
+      <p>The personal data we collect is used for the following purposes:</p>
+      <ul>
+        <li><strong>Providing and improving services:</strong> We use your information to deliver the services or products you have requested and to ensure the best possible experience on our platform.</li>
+        <li><strong>Customer support:</strong> Your data helps us respond to your inquiries, troubleshoot problems, and provide assistance.</li>
+        <li><strong>Marketing and communications:</strong> With your permission, we may send you promotional content, updates, or newsletters. You can choose to opt out of marketing communications at any time by following the instructions provided in the email.</li>
+        <li><strong>Personalization:</strong> We may use your information to personalize your experience, such as displaying content tailored to your preferences and improving the functionality of our services.</li>
+        <li><strong>Analytics:</strong> Non-personal data is used for analyzing user behavior, improving website performance, and understanding how visitors engage with our services.</li>
+      </ul>
+
+      <h3>Sharing Your Information</h3>
+      <p>We do not sell or rent your personal information to third parties. However, we may share your data with trusted third-party service providers to help us deliver our services. These third parties include hosting services, payment processors, and email delivery platforms. We ensure that any third parties we work with comply with stringent data protection standards and use your information only for the agreed-upon purposes.</p>
+      <p>In some cases, we may be required to disclose your information to legal authorities in response to legal requests, such as subpoenas, or to comply with applicable laws. We will only disclose the minimum necessary information in such cases.</p>
+
+      <h3>Cookies and Tracking Technologies</h3>
+      <p>Our website uses cookies and similar tracking technologies to enhance your browsing experience. Cookies are small files that are stored on your device and help us remember your preferences, such as language settings or login information. They also enable us to track your interactions with our site, allowing us to improve our services based on user behavior.</p>
+      <p>You can control or disable cookies through your browser settings. Please note that disabling cookies may affect certain features of our website, making it less personalized and functional.</p>
+
+      <h3>Security of Your Data</h3>
+      <p>We prioritize the security of your personal information. We implement a variety of security measures, including encryption, firewalls, and secure servers, to protect your data from unauthorized access, misuse, or disclosure. Despite our best efforts, no data transmission over the internet can be guaranteed to be completely secure, and we cannot fully eliminate all risks associated with data processing.</p>
+
+      <h3>Your Rights</h3>
+      <p>Depending on your location, you may have certain rights regarding your personal data. These rights may include:</p>
+      <ul>
+        <li>The right to access the personal information we hold about you.</li>
+        <li>The right to request corrections to any inaccurate or outdated information.</li>
+        <li>The right to request the deletion of your data, subject to certain legal limitations.</li>
+        <li>The right to restrict or object to the processing of your personal data.</li>
+      </ul>
+      <p>To exercise any of these rights, please contact us at <a href="mailto:${email}">${email}</a>, and we will respond to your request in accordance with applicable privacy laws.</p>
+
+      <h3>Data Retention</h3>
+      <p>We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required by law. Once your data is no longer needed, it will be securely deleted or anonymized.</p>
+
+      <h3>Contact Us</h3>
+      <p>If you have any questions or concerns about this Privacy Policy or how your data is handled, feel free to contact us at <a href="mailto:${email}">${email}</a>. We are committed to ensuring your privacy and will address your concerns promptly.</p>
+
+      <p>This Privacy Policy is effective as of [Insert Date]. We may update this policy from time to time to reflect changes in our practices or legal requirements. We encourage you to review this page periodically for the latest updates.</p>
+
+            `,
+            `
+      <h2>Privacy Policy for ${companyName}</h2>
+      <p>At ${websiteName} (${websiteURL}), your privacy is of utmost importance to us. This Privacy Policy aims to provide you with clear and transparent information about how we handle your personal data. We are committed to protecting your information and ensuring that your experience with our services is secure and trustworthy. Please take the time to read through this policy to understand how we collect, use, and protect your information.</p>
+
+      <h3>Entity Information</h3>
+      <p>${companyName} operates as a ${entityType} entity, with our headquarters located in ${state}, ${country}. As a company, we follow the relevant local and international privacy laws to ensure your personal information is protected. Our organization is dedicated to offering services that align with best practices in data security and privacy management.</p>
+
+      <h3>Information Collection</h3>
+      <p>We collect personal information from our users to provide better services and improve user experience on our platform. The type of information we collect includes ${personalInfo}. This data may be collected when you voluntarily submit it through forms on our website, such as when signing up for a service, subscribing to a newsletter, or contacting us for support. We also collect information automatically when you visit our website, such as your IP address, browser type, and browsing patterns. This data helps us understand how you use our services and allows us to enhance your overall experience.</p>
+
+      <h3>How We Use Your Information</h3>
+      <p>Your personal information is used for various purposes, including:</p>
+      <ul>
+        <li><strong>Providing Services:</strong> We use your information to process your requests and provide you with the services or products you have requested.</li>
+        <li><strong>Improving User Experience:</strong> The data helps us understand how users interact with our website, allowing us to make improvements to our services and content.</li>
+        <li><strong>Marketing and Communication:</strong> With your consent, we may use your contact details to send promotional offers, updates, or newsletters related to our services. You can opt out of these communications at any time.</li>
+        <li><strong>Security:</strong> We collect information to enhance the security of our website and prevent any unauthorized access, fraud, or other malicious activity.</li>
+      </ul>
+
+      <h3>Third-Party Sharing</h3>
+      <p>We take your privacy seriously and do not sell, rent, or trade your personal information to third parties. However, in some cases, we may share your information with trusted third-party service providers who assist us in operating our website or conducting business, provided they agree to keep your information confidential. These service providers may include payment processors, marketing agencies, and hosting providers.</p>
+
+      <h3>Cookies and Tracking Technologies</h3>
+      <p>We use cookies and similar tracking technologies to collect information about your interactions with our website. Cookies are small data files stored on your device that allow us to recognize your browser and track your browsing activity. This helps us personalize your experience and provide relevant content. You can control or disable cookies through your browser settings, but doing so may affect your experience on our website.</p>
+
+      <h3>Data Retention</h3>
+      <p>We will retain your personal information only for as long as necessary to fulfill the purposes for which it was collected or to comply with legal obligations. Once the retention period has expired, we will securely delete or anonymize your data.</p>
+
+      <h3>Security Measures</h3>
+      <p>We have implemented appropriate technical and organizational measures to protect your personal information from unauthorized access, loss, or misuse. Our security protocols include encryption, firewalls, and regular security audits to ensure the safety of your data.</p>
+
+      <h3>Your Rights</h3>
+      <p>Depending on your location, you may have certain rights regarding your personal data. These rights may include the right to access, correct, or delete your data, as well as the right to restrict or object to our processing of your data. If you would like to exercise any of these rights, please contact us at ${email}, and we will respond to your request in accordance with applicable laws.</p>
+
+      <h3>Contact Us</h3>
+      <p>If you have any questions or concerns about this Privacy Policy, or if you would like more information about how we handle your personal data, please feel free to contact us. You can reach us at <a href="mailto:${email}">${email}</a>. We are here to address any issues you may have and to ensure your privacy is protected to the fullest extent.</p>
+
+      <p>This Privacy Policy was last updated on [Insert Date]. Please review it periodically, as we may update or modify our policy to reflect changes in our practices or applicable laws.</p>
+
+            `,
+          ];
+
+          const textTemplates = [
+            `
+      Privacy Policy for ${companyName}
+
+      At ${websiteName} (${websiteURL}), we respect your privacy and are committed to safeguarding the personal information you provide. This Privacy Policy outlines our practices regarding the collection, use, and protection of your data. We encourage you to read this policy thoroughly to understand how we treat your personal information and the measures we take to protect it.
+
+      Entity Information
+
+      ${companyName} operates as a ${entityType} entity and is headquartered in ${state}, ${country}. Our organization abides by all relevant data protection laws to ensure your privacy is respected and your information is kept secure. We are committed to transparency in our data processing activities and want you to feel confident when using our services.
+
+      Types of Information We Collect
+
+      We collect various types of information to better serve you. This includes personal data such as ${personalInfo}, which you provide voluntarily when interacting with our services. We may collect this information when you sign up for an account, make a purchase, subscribe to our newsletter, or engage with our customer support team.
+
+      Additionally, we collect non-personal data automatically through cookies, web beacons, and similar technologies when you visit our website. This may include your IP address, browser type, device information, and browsing behavior. Such data helps us analyze trends, manage our website, and improve the user experience.
+
+      How We Use Your Information
+
+      The personal data we collect is used for the following purposes:
+
+      Providing and improving services: We use your information to deliver the services or products you have requested and to ensure the best possible experience on our platform.
+      Customer support: Your data helps us respond to your inquiries, troubleshoot problems, and provide assistance.
+      Marketing and communications: With your permission, we may send you promotional content, updates, or newsletters. You can choose to opt out of marketing communications at any time by following the instructions provided in the email.
+      Personalization: We may use your information to personalize your experience, such as displaying content tailored to your preferences and improving the functionality of our services.
+      Analytics: Non-personal data is used for analyzing user behavior, improving website performance, and understanding how visitors engage with our services.
+      Sharing Your Information
+
+      We do not sell or rent your personal information to third parties. However, we may share your data with trusted third-party service providers to help us deliver our services. These third parties include hosting services, payment processors, and email delivery platforms. We ensure that any third parties we work with comply with stringent data protection standards and use your information only for the agreed-upon purposes.
+
+      In some cases, we may be required to disclose your information to legal authorities in response to legal requests, such as subpoenas, or to comply with applicable laws. We will only disclose the minimum necessary information in such cases.
+
+      Cookies and Tracking Technologies
+
+      Our website uses cookies and similar tracking technologies to enhance your browsing experience. Cookies are small files that are stored on your device and help us remember your preferences, such as language settings or login information. They also enable us to track your interactions with our site, allowing us to improve our services based on user behavior.
+
+      You can control or disable cookies through your browser settings. Please note that disabling cookies may affect certain features of our website, making it less personalized and functional.
+
+      Security of Your Data
+
+      We prioritize the security of your personal information. We implement a variety of security measures, including encryption, firewalls, and secure servers, to protect your data from unauthorized access, misuse, or disclosure. Despite our best efforts, no data transmission over the internet can be guaranteed to be completely secure, and we cannot fully eliminate all risks associated with data processing.
+
+      Your Rights
+
+      Depending on your location, you may have certain rights regarding your personal data. These rights may include:
+
+      The right to access the personal information we hold about you.
+      The right to request corrections to any inaccurate or outdated information.
+      The right to request the deletion of your data, subject to certain legal limitations.
+      The right to restrict or object to the processing of your personal data.
+      To exercise any of these rights, please contact us at ${email}, and we will respond to your request in accordance with applicable privacy laws.
+
+      Data Retention
+
+      We retain your personal information only for as long as necessary to fulfill the purposes outlined in this policy, unless a longer retention period is required by law. Once your data is no longer needed, it will be securely deleted or anonymized.
+
+      Contact Us
+
+      If you have any questions or concerns about this Privacy Policy or how your data is handled, feel free to contact us at ${email}. We are committed to ensuring your privacy and will address your concerns promptly.
+
+      This Privacy Policy is effective as of [Insert Date]. We may update this policy from time to time to reflect changes in our practices or legal requirements. We encourage you to review this page periodically for the latest updates.
+
+                    `,
+            `
+      Privacy Policy for ${companyName}
+
+      At ${websiteName} (${websiteURL}), your privacy is of utmost importance to us. This Privacy Policy aims to provide you with clear and transparent information about how we handle your personal data. We are committed to protecting your information and ensuring that your experience with our services is secure and trustworthy. Please take the time to read through this policy to understand how we collect, use, and protect your information.
+
+      Entity Information
+
+      ${companyName} operates as a ${entityType} entity, with our headquarters located in ${state}, ${country}. As a company, we follow the relevant local and international privacy laws to ensure your personal information is protected. Our organization is dedicated to offering services that align with best practices in data security and privacy management.
+
+      Information Collection
+
+      We collect personal information from our users to provide better services and improve user experience on our platform. The type of information we collect includes ${personalInfo}. This data may be collected when you voluntarily submit it through forms on our website, such as when signing up for a service, subscribing to a newsletter, or contacting us for support. We also collect information automatically when you visit our website, such as your IP address, browser type, and browsing patterns. This data helps us understand how you use our services and allows us to enhance your overall experience.
+
+      How We Use Your Information
+
+      Your personal information is used for various purposes, including:
+
+      Providing Services: We use your information to process your requests and provide you with the services or products you have requested.
+      Improving User Experience: The data helps us understand how users interact with our website, allowing us to make improvements to our services and content.
+      Marketing and Communication: With your consent, we may use your contact details to send promotional offers, updates, or newsletters related to our services. You can opt out of these communications at any time.
+      Security: We collect information to enhance the security of our website and prevent any unauthorized access, fraud, or other malicious activity.
+      Third-Party Sharing
+
+      We take your privacy seriously and do not sell, rent, or trade your personal information to third parties. However, in some cases, we may share your information with trusted third-party service providers who assist us in operating our website or conducting business, provided they agree to keep your information confidential. These service providers may include payment processors, marketing agencies, and hosting providers.
+
+      Cookies and Tracking Technologies
+
+      We use cookies and similar tracking technologies to collect information about your interactions with our website. Cookies are small data files stored on your device that allow us to recognize your browser and track your browsing activity. This helps us personalize your experience and provide relevant content. You can control or disable cookies through your browser settings, but doing so may affect your experience on our website.
+
+      Data Retention
+
+      We will retain your personal information only for as long as necessary to fulfill the purposes for which it was collected or to comply with legal obligations. Once the retention period has expired, we will securely delete or anonymize your data.
+
+      Security Measures
+
+      We have implemented appropriate technical and organizational measures to protect your personal information from unauthorized access, loss, or misuse. Our security protocols include encryption, firewalls, and regular security audits to ensure the safety of your data.
+
+      Your Rights
+
+      Depending on your location, you may have certain rights regarding your personal data. These rights may include the right to access, correct, or delete your data, as well as the right to restrict or object to our processing of your data. If you would like to exercise any of these rights, please contact us at ${email}, and we will respond to your request in accordance with applicable laws.
+
+      Contact Us
+
+      If you have any questions or concerns about this Privacy Policy, or if you would like more information about how we handle your personal data, please feel free to contact us. You can reach us at ${email}. We are here to address any issues you may have and to ensure your privacy is protected to the fullest extent.
+
+      This Privacy Policy was last updated on [Insert Date]. Please review it periodically, as we may update or modify our policy to reflect changes in our practices or applicable laws.
+            `,
+          ];
+
+          // Randomly select a template from the array
+          const randomHTML =
+            htmlTemplates[Math.floor(Math.random() * htmlTemplates.length)];
+
+          const randomText = randomHTML.replace(/<[^>]*>/g, "");
+
+          // Show the result container
+          document.getElementById("result").classList.remove("hidden");
+
+          // Default: show HTML format
+          document.getElementById("output").value = randomHTML;
+
+          // Tab functionality
+          document.querySelectorAll(".tab-button").forEach((button) => {
+            button.addEventListener("click", function () {
+              const tab = this.dataset.tab;
+              if (tab === "html") {
+                document.getElementById("output").value = randomHTML;
+              } else if (tab === "text") {
+                document.getElementById("output").value = randomText;
+              }
+            });
+          });
+
+          // Copy to clipboard
+          document
+            .getElementById("copyButton")
+            .addEventListener("click", function () {
+              const output = document.getElementById("output");
+              output.select();
+              document.execCommand("copy");
+              alert("Privacy Policy copied to clipboard!");
+            });
+        });
+    </script>
+  </body>
+</html>
